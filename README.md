@@ -3,7 +3,7 @@
 
 [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/) is a lightweight and semantic markup language primarily designed for writing technical documentation. The language can be used to produce a variety of presentation-rich output formats, all from content encoded in a concise, human-readable, plain text format.
 
-This project aims to provide a simple book template that highlights the benefits of using AsciiDoc for writing technical documentation from a single source. It especially adresses users of the Microsoft Windows operating system without relying on using Docker containers. 
+This project aims to provide a simple book template that highlights the benefits of using AsciiDoc for writing technical documentation from a single source. It focuses on the automation of output generation and is also intended to specifically appeal to users of the Microsoft Wondows operating system without relying on using Docker containers. 
 
 ## Basic installation for different output formats
 
@@ -204,6 +204,17 @@ To use a custom [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets) styl
 ```
 
 Inspect output files. Congrats!
+
+## Other IDEs and text editors
+
+- [Asciidoc FX](https://www.asciidocfx.com/) is a document editor to build PDF, Epub, Mobi and HTML books, documents and slides. It provides extensions for [PlantUML](https://sourceforge.net/projects/plantuml/), [Mermaid](https://mermaid.js.org/), and [MathJax](https://www.mathjax.org/).
+
+- The [AsciiDoc extension](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) for [Visual Studio Code](https://code.visualstudio.com/) provides live preview, syntax highlighting and snippets for the AsciiDoc format using Asciidoctor.
+
+Any of these options can turn out to be your one-stop shop when it comes to editing AsciiDoc documents as easily as possible. However, when you find that you rely on a specfic IDE or tool configuration sich as Visual Studio Code with the AsciiDoc extension, you might want to [make it portable](https://code.visualstudio.com/docs/editor/portable) and put it in your backup.
+
+
+
 
 
 
