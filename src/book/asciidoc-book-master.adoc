@@ -1,18 +1,21 @@
 = Asciidoc Book Template
 :author: Stefan Gudenkauf 
 :email: stefan.gudenkauf@live.com
-:revnumber: v1.0
-:revdate: June 16th, 2024
+:revnumber: v0.0.1
+:revdate: October 24th, 2024
 :doctype: book
 :reproducible:
 :toc:
 :lang: en
 :stem: latexmath
 :listing-caption: Listing
-//:source-highlighter: rouge
-:source-highlighter: highlight.js
 :pdf-theme: default-sans-with-font-fallbacks
-//:pdf-page-size: Letter // set page size (default is A4)
+// set page size (default is A4)
+//:pdf-page-size: Letter 
+// build-time rouge will not work with asciidoctor-web-pdf
+:source-highlighter: rouge 
+// client-side highlight.js will not work with asciidoctor-pdf
+//:source-highlighter: highlight.js 
 
 [preface]
 include::about.adoc[]
