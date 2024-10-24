@@ -9,7 +9,7 @@
 :lang: en
 :stem: latexmath
 :listing-caption: Listing
-:source-highlighter: highlight.js
+:source-highlighter: rouge
 :pdf-theme: default-sans-with-font-fallbacks
 //:pdf-page-size: Letter // set page size (default is A4)
 

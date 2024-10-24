@@ -1,3 +1,7 @@
+# Ignore Asciidoctor Web PDF binaries
+/.asciidoctor-web-pdf/
+
+# ignore standard Ruby files and folders
 *.gem
 *.rbc
 /.config
