@@ -1,0 +1,33 @@
+= Asciidoc Book Template
+:author: Stefan Gudenkauf 
+:email: stefan.gudenkauf@live.com
+:revnumber: v1.0
+:revdate: June 16th, 2024
+:doctype: book
+:reproducible:
+:toc:
+:lang: en
+:stem: latexmath
+:listing-caption: Listing
+:source-highlighter: highlight.js
+:pdf-theme: default-sans-with-font-fallbacks
+//:pdf-page-size: Letter // set page size (default is A4)
+
+[preface]
+include::about.adoc[]
+include::preface.adoc[]
+
+[introduction]
+include::introduction.adoc[]
+
+== Part I: Name of the Part
+include::chapter01.adoc[]
+include::chapter02.adoc[]
+
+[colophon]
+include::colophon.adoc[]
+include::bibliography.adoc[]
+
+[appendix]
+include::appendix.adoc[]
+

@@ -1,0 +1,10 @@
+
+== Colophon
+
+:url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
+
+Don't worry about gumberoos or splintercats.
+Something far more fearsome plagues the days, nights, and inbetweens.
+Wolpertingers.
+
+Wolpertingers are {url-wolpertinger}[ravenous beasts].
