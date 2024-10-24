@@ -1,8 +1,9 @@
-# Ignore AsciiDoc tool binaries
-/.asciidoctor-web-pdf/
+# Ignore common AsciiDoc tool binaries
 /.asciidocfx/
+/.asciidoctor-vscode/
+/.asciidoctor-web-pdf/
 
-# ignore standard Ruby files and folders
+# Ignore standard files and folders
 *.gem
 *.rbc
 /.config
