@@ -123,8 +123,8 @@ Move to folder ``asciidoc-book-template/`` and generate output files in folder `
 
 ```bash
 asciidoctor src/asciidoc-book-master.adoc -o out/asciidoc-book-master.html
-asciidoctor-pdf   
-asciidoctor-epub3   
+asciidoctor-pdf src/asciidoc-book-master.adoc -o out/asciidoc-book-master.pdf
+asciidoctor-epub3 src/asciidoc-book-master.adoc -o out/asciidoc-book-master.epub
 ```
 
 **Please note:** The Microsoft Windows operating system uses ``\`` instead of ``/`` to specify file paths on the command line.
