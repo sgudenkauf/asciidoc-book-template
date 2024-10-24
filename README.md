@@ -7,39 +7,40 @@
 
 Install Ruby first, for example, by using the [RubyInstaller](https://rubyinstaller.org/downloads/). Confirm successful installation:
 
-```
+```bash
 ruby --version
 ```
 
 Install Asciidoctor:
 
-```
+```bash
 gem install asciidoctor
 asciidoctor --version
 ```
 
 Install Asciidoctor-PDF:
 
-```
+```bash
 gem install asciidoctor-pdf
 asciidoctor-pdf -v
 ```
 
 Install [Asciidoctor EPUB3](https://docs.asciidoctor.org/epub3-converter/latest/#install-the-published-gem):
 
-```
+```bash
 gem install asciidoctor-epub3
 asciidoctor-epub3 -v
 ```
 
 Install syntax highlighting for code examples:
-```
+
+```bash
 gem install rouge
 ```
 
 ## Test basic installation
 
-Create project folder structure ``asciidoc-book-template/src/example`` or clone this repository.
+Create project folder structure ``asciidoc-book-template/example`` or clone this repository.
 
 Move to folder ``asciidoc-book-template/example`` and create file ``basic-example.adoc``:
 
@@ -85,28 +86,22 @@ end
 That's all, folks!
 ```
 
+**See also:** [AsciiDoc Syntax Quick Reference](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
+
 In the folder ``asciidoc-book-template/example``, execute the following commands to generate diferent output formats:
 
-```
+```bash
 asciidoctor basic-example.adoc  
 asciidoctor-pdf basic-example.adoc  
-asciidoctor-epub3 -D output basic-example.adoc  
+asciidoctor-epub3 basic-example.adoc  
 ```
 
 Inspect output files.
 
+## Create book template
 
-## Optional extensions
+Copy template files in folder ``asciidoc-book-template/src/`` from this repository to your ``asciidoc-book-template/src/`` folder or write your documentation, for example:
 
-Install automatic hyphenation, if needed:
-```
-gem install text-hyphen
-```
-
-
-## Write content
-
-Write your documentation, for example:
 ```
 src/
 ├─ about.adoc 
@@ -122,29 +117,37 @@ src/
 
 **See also:** [AsciiDoc Syntax Quick Reference](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
 
-## Generate output
+## Generate book in different formats
 
-Generate output files:
+Move to folder ``asciidoc-book-template/`` and generate output files in folder ``asciidoc-book-template/dist``:
 
+```bash
+asciidoctor src/asciidoc-book-master.adoc -o out/asciidoc-book-master.html
+asciidoctor-pdf   
+asciidoctor-epub3   
 ```
-asciidoctor test.adoc  
-asciidoctor-pdf test.adoc  
-asciidoctor-epub3 test.adoc  
-```
+
+**Please note:** The Microsoft Windows operating system uses ``\`` instead of ``/`` to specify file paths on the command line.
 
 **Also see:** CLI commands in ``build.bat``.
 
-## Generate output with custom layout
+<!--
+## Optional extensions
 
-[Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) is PDF converter for AsciiDoc that allows complex layouts to be defined with CSS and JavaScript.
+Install automatic hyphenation, if needed:
+```
+gem install text-hyphen
+```
+
+Generate output with custom layout with [Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf), a PDF converter for AsciiDoc that allows complex layouts to be defined with CSS and JavaScript.
 
 **Direct Download:** https://github.com/ggrossetie/asciidoctor-web-pdf/releases
 
 ![alt text](img/image.png)
 
+
 **Also see:** Contents of folder ``tools/`` 
 
 **Please note:** The file ``build.bat`` expects an unzipped installation in `/tools/asciidoctor-web-pdf-win-v1.0.0-alpha.16/`
-
-
+-->
 
