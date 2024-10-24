@@ -1,5 +1,6 @@
-# Ignore Asciidoctor Web PDF binaries
+# Ignore AsciiDoc tool binaries
 /.asciidoctor-web-pdf/
+/.asciidocfx/
 
 # ignore standard Ruby files and folders
 *.gem
