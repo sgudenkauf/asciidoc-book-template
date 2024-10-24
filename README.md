@@ -187,7 +187,7 @@ asciidoctor-epub3 src\book\asciidoc-book-master.adoc -o out\book\asciidoc-book-m
 
 Inspect the output files that were generated in the folder ``asciidoc-book-template/out/book/``:
 
-![Fig. 1: HTML and PDF output.](img/readme-01.png)
+![Fig. 1: HTML and PDF output.](img/01.png)
 
 **Please note:** The Microsoft Windows operating system uses ``\`` instead of ``/`` to specify file paths on the command line. On other systems, adjust the file paths in the command line arguments accordingly.
 
@@ -230,7 +230,7 @@ Unzip the archive and inspect the folder structure. Enable portable mode by crea
 
 Install the [AsciiDoc extension](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) for Visual Studio Code as shown in Fig. 2. Open Visual Studio Code (``Code.exe``), click on the *Extensions* button in the left panel, search for AsciiDoc and click on the *AsciiDoc extension*. Then click *Install*.
 
-![Fig 2: The AsciiDoc extension in Visual Studio Code.](img/readme-02.png)
+![Fig 2: The AsciiDoc extension in Visual Studio Code.](img/02.png)
 
 Save your custom development environment (the portable Visual Studio Code installation) by creating a ZIP-file archive of the VS Code's application folder after you installed the *AsciiDoc extension*. You can rename the folder before creating the ZIP-file to reflect the distinctiveness of your development environment: ``VSCode-win32-x64-1.94.2-asciidoc.zip``. Integrate the ZIP-file in your project's backup process.
 
@@ -280,7 +280,7 @@ Alternatively, you can ...
 
 **Direct download:** https://github.com/ggrossetie/asciidoctor-web-pdf/releases (pre-compiled binaries, available under the *Assets* section)
 
-![Fig. 3: Pre-compiled binaries of Asciidoctor Web PDF.](img/readme-02.png)
+![Fig. 3: Pre-compiled binaries of Asciidoctor Web PDF.](img/03.png)
 
 Download the pre-compiled binaries for your system, create the folder ``asciidoc-book-template/.asciidoctor-web-pdf/`` and unzip the binaries there. 
 
