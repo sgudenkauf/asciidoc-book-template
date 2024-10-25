@@ -218,7 +218,7 @@ Download [Visual Studio Code](https://code.visualstudio.com/) as a compressed [Z
 
 When you find you rely on a specfic IDE or tool configuration such as Visual Studio Code with the AsciiDoc extension, you might want to [make it portable](https://code.visualstudio.com/docs/editor/portable) and put it in your backup.
 
-Unzip the archive and inspect the folder structure. Enable portable mode by creating a data folder within VS Code's application folder:
+To do so, unzip the archive and inspect the folder structure. Enable portable mode by creating a data folder within VS Code's application folder:
 
 ```
 ├─ VSCode-win32-x64-1.94.2/
@@ -228,55 +228,66 @@ Unzip the archive and inspect the folder structure. Enable portable mode by crea
 |  ├─  ...
 ```
 
-Install the [AsciiDoc extension](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) for Visual Studio Code as shown in Fig. 2. Open Visual Studio Code (``Code.exe``), click on the *Extensions* button in the left panel, search for AsciiDoc and click on the *AsciiDoc extension*. Then click *Install*.
+Install the [AsciiDoc extension](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) for Visual Studio Code as shown in Fig. 2: Open Visual Studio Code (``Code.exe``), click on the *Extensions* button in the left panel, search for AsciiDoc and click on the *AsciiDoc extension*. Then click *Install*.
 
 ![Fig 2: The AsciiDoc extension in Visual Studio Code.](img/02.png)
 
-Save your custom development environment (the portable Visual Studio Code installation) by creating a ZIP-file archive of the VS Code's application folder after you installed the *AsciiDoc extension*. You can rename the folder before creating the ZIP-file to reflect the distinctiveness of your development environment: ``VSCode-win32-x64-1.94.2-asciidoc.zip``. Integrate the ZIP-file in your project's backup process.
+**See also:** https://github.com/ggrossetie/asciidoctor-vscode
 
+Save your custom development environment (the portable Visual Studio Code installation) by creating a ZIP-file archive of the VS Code's application folder after you installed the *AsciiDoc extension*. 
+
+You can rename the folder before creating the ZIP-file to reflect the distinctiveness of your development environment: ``VSCode-win32-x64-1.94.2-asciidoc.zip``. 
+
+Integrate the ZIP-file in your project's backup process.
 
 ## Summary
 
-You now have created ...
+You now have created the following resuls:
 
 - A **template for book projects** with the AsciiDoc language
   - For other projects such als slides or theses you simply create subfolders in ``/src/`` and extend the build script
+
 - An **automated publishing platform** for your AsciiDoc projects
   - The platform is generic enough to be replicated on other operating systems
-- A **convenient AsciiDoc editor** that  
-  - You can use the editor to also generate output files manually - a great addition to the automated process you have set up!
+
+- A **convenient AsciiDoc editor** 
+  - You can use the editor to generate output files manually, a great addition to the automated process you have set up!
   - As a kind of customized tool, it is portable and you can put it in your backup
 
-If you do not need sophisticated layout options and support for STEM/mathematical expressions in your PDF output, you are done here! Congrats!
+If you do not need sophisticated layout options and support for STEM/mathematical expressions in your automated PDF generation, you are done here! Congrats!
 
 ## Next Steps
 
-### STEM expressions and PDF layout
+### About STEM expressions and PDF layout
 
-When converting to HTML, Asciidoctor relies on the JavaScript-based [MathJax](https://www.mathjax.org/) library to parse and render [STEM expressions](https://docs.asciidoctor.org/pdf-converter/latest/stem/) in the browser when the page is loaded. Asciidoctor PDF does not provide native support for STEM blocks and inline macros (e.g. *latexmath*). 
+When converting to HTML, Asciidoctor relies on the JavaScript-based [MathJax](https://www.mathjax.org/) library to parse and render [STEM expressions](https://docs.asciidoctor.org/pdf-converter/latest/stem/) in the browser when the page is loaded. Asciidoctor PDF does not provide native support for STEM block expressions and inline macros (e.g. *latexmath*). 
 
-The standard STEM processor for AsciiDoc is [Asciidoctor Mathematical](https://github.com/asciidoctor/asciidoctor-mathematical). However, it is difficult to install because it requires specific third-party libraries and system fonts for image rendering. You can consider using the [Docker (OCI) image for Asciidoctor](https://github.com/asciidoctor/docker-asciidoctor), which includes [Asciidoctor Mathematical](https://github.com/asciidoctor/asciidoctor-mathematical).
+The standard STEM processor for AsciiDoc is [Asciidoctor Mathematical](https://github.com/asciidoctor/asciidoctor-mathematical). However, it is difficult to install because it requires specific third-party libraries and system fonts for image rendering. 
 
-Alternatively, you can ...
+There are several options:
+
+- Use your personal development environment based on Visual studio Code and the AsciiDoc extension to generate PDF output files manually.
 
 - Print the HTML output to PDF, for example using the *[Microsoft Print to PDF](https://answers.microsoft.com/en-us/windows/forum/all/how-to-add-or-reinstall-the-microsoft-pdf-printer/a473357b-8a8f-44fe-ba3a-9680b6bdfa79)* printer.
+
+- Use the [Docker image for Asciidoctor](https://github.com/asciidoctor/docker-asciidoctor), which includes Asciidoctor Mathematical.
+
 - Use [Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) if you need custom and advanced layout options.
 
-## [Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf)
+### Install Asciidoctor Web PDF
 
-[Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) is an AsciiDoc to PDF converter based on web technologies with advances layout options:
+[Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) is an AsciiDoc to PDF converter based on web technologies that provides advances layout options:
 
 - Complex layouts with CSS and JavaScript
 - SVG icons with Font Awesome 5
 - PDF document outline (i.e., bookmarks)
 - Table Of Contents
 - Document metadata (title, authors, subject, keywords, etc)
-- Fully customizable template
+- Fully customizable templates for different document types (e.g., documents, letters, books, cheat sheets, resumes and slides)
 - Syntax highlighting with [highlight.js](https://highlightjs.org/)
 - Page numbering
 - Preview mode
 - STEM support with [MathJax 3](https://www.mathjax.org/)
-- Templates for documents, letters, books, cheat sheets, resumes and slides
 
 **Direct download:** https://github.com/ggrossetie/asciidoctor-web-pdf/releases (pre-compiled binaries, available under the *Assets* section)
 
@@ -284,29 +295,53 @@ Alternatively, you can ...
 
 Download the pre-compiled binaries for your system, create the folder ``asciidoc-book-template/.asciidoctor-web-pdf/`` and unzip the binaries there. 
 
+**Please note:** If you manage your project in a version control system, you should exclude the Asciidoctor Web PDF platform binaries from version control.
+
+**See also:** File ``.gitignore`` in this GitHub repository.
+
+### Generate Output Formats with Asciidoctor Web PDF
+
 Generate output files in folder ``asciidoc-book-template/out``:
 
-```bash
-.asciidoctor-web-pdf\asciidoctor-web-pdf.exe src\asciidoc-book-master.adoc -o out\asciidoc-book-master-WEB.pdf
+```
+.asciidoctor-web-pdf\asciidoctor-web-pdf.exe src\book\asciidoc-book-master.adoc -o out\book\asciidoc-book-master-WEB.pdf
 ```
 
-To use a custom [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets) stylesheet, create the folder ``asciidoc-book-template/css/`` and put your stylesheet there. Generate output files with the flag ``-a stylesheet="+..\css\myStyle.css"``. The ``+`` prefix applies your custom stylesheet in addition to all the default styles:
+To use a custom [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets) stylesheet, create the folder ``asciidoc-book-template/css/`` and put your stylesheet there. 
 
-```cmd
+Generate output files with the flag ``-a stylesheet="+..\css\myStyle.css"``. The ``+`` prefix applies your custom stylesheet in addition to the integrated default styles:
+
+```
 .asciidoctor-web-pdf\asciidoctor-web-pdf.exe src\asciidoc-book-master.adoc -a stylesheet="+..\css\myStyle.css" -o out\asciidoc-book-master-WEB.pdf
 ```
 
-Inspect output files. Congrats!
+### Automate Output Generation with Asciidoctor Web PDF
 
-### Other IDEs and text editors
+If you want to use Asciidoctor Web PDF in your automated build process, you can integrate the commands from the previous section  in your build script.
 
-Besides Visual Studio Code there exist other tooling such as [Asciidoc FX](https://www.asciidocfx.com/), a document editor to build PDF, Epub, Mobi and HTML books, documents and slides. It provides extensions for [PlantUML](https://sourceforge.net/projects/plantuml/), [Mermaid](https://mermaid.js.org/), and [MathJax](https://www.mathjax.org/). Any of these options can turn out to be your one-stop shop when it comes to editing AsciiDoc documents as easily as possible. 
+For example, if you automated output generation on your Windows system with a batch script ``build.bat``, you can add these commands there.
 
+### Other IDEs and Text Editors
+
+Besides Visual Studio Code there are other tools such as [Asciidoc FX](https://www.asciidocfx.com/), a document editor to build PDF, Epub, Mobi and HTML books, documents and slides. It provides extensions for [PlantUML](https://sourceforge.net/projects/plantuml/), [Mermaid](https://mermaid.js.org/), and [MathJax](https://www.mathjax.org/). Any of these options can turn out to be your one-stop shop when it comes to editing and creating documents with AsciiDoc. 
+
+### More Templates
+
+Create more templates for letters, papers, slides, thesis, etc. Locate them in your ``/src/`` folder:
+
+```
+asciidoc-book-template/
+├─ example/
+├─ src/
+|  ├─ book/
+|  ├─ slides/
+|  ├─ thesis/
+```
+
+Integrate the new document templates into your automated build process (e.g., in your ``build.bat``).
 
 
 <!--
-
-Any of these options can turn out to be your one-stop shop when it comes to editing AsciiDoc documents as easily as possible. 
 
 Install rendering for [STEM](https://docs.asciidoctor.org/pdf-converter/latest/stem/) expressions:
 
@@ -314,26 +349,18 @@ Install rendering for [STEM](https://docs.asciidoctor.org/pdf-converter/latest/s
 gem install asciidoctor-mathematical
 ```
 
-**Please note:** When converting to HTML, Asciidoctor relies on the JavaScript-based MathJax library to parse and render the STEM expressions in the browser when the page is loaded. Asciidoctor PDF does not provide native support for STEM blocks and inline macros (i.e., asciimath and latexmath). Therefore, we use ...
-
-
-
-```
-gem install asciidoctor-texnical
-```
-
-
 **Please note:** To render STEM expressions for PDF output, use the flag ``-r asciidoctor-mathematical``:
 
 ```bash
 asciidoctor-pdf -r asciidoctor-mathematical src/asciidoc-book-master.adoc -o out/asciidoc-book-master.pdf
 ```
-It [fails to built](https://github.com/asciidoctor/asciidoctor-mathematical/issues/121) on the Microsoft Windows operating system
 
+It [fails to built](https://github.com/asciidoctor/asciidoctor-mathematical/issues/121) on the Microsoft Windows operating system
 
 ## Optional extensions
 
 Install automatic hyphenation, if needed:
+
 ```
 gem install text-hyphen
 ```
