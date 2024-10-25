@@ -336,6 +336,7 @@ asciidoc-book-template/
 |  ├─ book/
 |  ├─ slides/
 |  ├─ thesis/
+|  ├─ ...
 ```
 
 Integrate the new document templates into your automated build process (e.g., in your ``build.bat``).
