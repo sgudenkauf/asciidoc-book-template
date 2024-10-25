@@ -266,19 +266,25 @@ If you do not need sophisticated layout options and support for STEM and/or math
 
 ### About STEM expressions and PDF layout
 
-When converting to HTML, Asciidoctor relies on the JavaScript-based [MathJax](https://www.mathjax.org/) library to parse and render [STEM expressions](https://docs.asciidoctor.org/pdf-converter/latest/stem/) in the browser when the page is loaded. Asciidoctor PDF does not provide native support for STEM block expressions and inline macros (e.g. *latexmath*). 
+AsciiDoc’s integration for Science, Technology, Engineering and Math ([STEM](https://docs.asciidoctor.org/pdf-converter/latest/stem/)) expressions assumes that all equations are written in [AsciiMath](https://asciimath.org/) if not specified otherwise. 
 
-The standard STEM processor for AsciiDoc is [Asciidoctor Mathematical](https://github.com/asciidoctor/asciidoctor-mathematical). However, it is difficult to install because it requires specific third-party libraries and system fonts for image rendering. 
+Asciidoctor's HTML converter supports STEM written in AsciiMath or the LaTeX math notation, and uses [MathJax](https://www.mathjax.org/) to render STEM in the browser when the page is loaded. 
+
+Asciidoctor PDF does not provide native support for STEM block expressions and inline macros in PDF documents. 
+
+[Asciidoctor Mathematical](https://github.com/asciidoctor/asciidoctor-mathematical) is an extension that processes STEM expressions and converts them to a PDF-compatible format.
+
+However, Asciidoctor Mathematical can be difficult to install because it requires specific third-party libraries and system fonts for image rendering. 
 
 There are several options:
 
-- Use your personal development environment based on Visual studio Code and the AsciiDoc extension to generate PDF output files manually.
+- Use your [custom development environment](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode) to start PDF output file generation manually.
 
-- Print the HTML output to PDF, for example using the *[Microsoft Print to PDF](https://answers.microsoft.com/en-us/windows/forum/all/how-to-add-or-reinstall-the-microsoft-pdf-printer/a473357b-8a8f-44fe-ba3a-9680b6bdfa79)* printer.
+- Print the HTML output to a PDF file, for example using the [Microsoft Print to PDF](https://answers.microsoft.com/en-us/windows/forum/all/how-to-add-or-reinstall-the-microsoft-pdf-printer/a473357b-8a8f-44fe-ba3a-9680b6bdfa79) printer.
 
 - Use the [Docker image for Asciidoctor](https://github.com/asciidoctor/docker-asciidoctor), which includes Asciidoctor Mathematical.
 
-- Use [Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) if you need custom and advanced layout options.
+- Use [Asciidoctor Web PDF](https://github.com/ggrossetie/asciidoctor-web-pdf) if you need STEM and advanced layout options for your PDF files.
 
 ### Install Asciidoctor Web PDF
 

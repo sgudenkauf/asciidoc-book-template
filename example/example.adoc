@@ -35,9 +35,16 @@ puts 'Hello, World!' # <1>
 ----
 <1> A callout for a line of code.
 
-And here is a STEM expression:
+And here is a STEM expression with _latexmath_:
 
 [stem]
 ++++
 \lim_{n \to \infty}\frac{n}{\sqrt[n]{n!}} = {\large e}
+++++
+
+And here is a STEM expression with https://github.com/asciidoctor/asciimath?tab=readme-ov-file[_asciimath_]:
+
+[asciimath]
+++++
+e = sum_(n=0)^oo 1 / n!
 ++++
