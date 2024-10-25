@@ -1,0 +1,43 @@
+= AsciiDoc Document Example
+John Doe <john@doe.org> 
+// Allow caption attributes for listings and source blocks
+:listing-caption: Listing
+// Enable syntax highlighting for source code
+:source-highlighter: highlight.js
+// Enable font-based icons for callouts
+:icons: font
+// Render STEM expressions
+:stem: latexmath
+// Generate table of contents
+:toc:
+
+This is an example of a simple https://asciidoc.org[AsciiDoc] document created by {author}.
+
+== First Section
+
+A paragraph followed by a list. It also has a footnote.footnote:[AsciiDoc supports unordered, ordered, and description lists.] 
+
+* item 1
+* item 2
+
+Another paragraph with *strong* significance, an _emphasized_ statement, a *_combination_* of both, and an inline `code` example. 
+
+*See also:* https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-constrained[AsciiDoc Syntax Quick Reference]
+
+== Second Section
+
+Here is an example for source code blocks with a caption:
+
+.A most basic Ruby program.
+[source,ruby]
+----
+puts 'Hello, World!' # <1>
+----
+<1> A callout for a line of code.
+
+And here is a STEM expression:
+
+[stem]
+++++
+\lim_{n \to \infty}\frac{n}{\sqrt[n]{n!}} = {\large e}
+++++
