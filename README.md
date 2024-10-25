@@ -1,5 +1,6 @@
 # asciidoc-book-template
 
+2924-10-25, Stefan Gudenkauf
 
 [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/) is a lightweight and semantic markup language primarily designed for writing technical documentation. The language can be used to produce a variety of presentation-rich output formats, all from content encoded in a concise, human-readable, plain text format.
 
@@ -148,7 +149,11 @@ asciidoctor-pdf example.adoc
 asciidoctor-epub3 example.adoc  
 ```
 
-Inspect output files. Well done so far!
+Inspect the output files: 
+
+![Fig. 1: HTML and PDF output.](img/01.png)
+
+Well done so far!
 
 **See also:** [AsciiDoc Syntax Quick Reference](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
 
@@ -184,9 +189,7 @@ asciidoctor-pdf   src\book\asciidoc-book-master.adoc -o out\book\asciidoc-book-m
 asciidoctor-epub3 src\book\asciidoc-book-master.adoc -o out\book\asciidoc-book-master.epub
 ```
 
-Inspect the output files that were generated in the folder ``asciidoc-book-template/out/book/``:
-
-![Fig. 1: HTML and PDF output.](img/01.png)
+Inspect the output files that were generated in the folder ``asciidoc-book-template/out/book/``.
 
 **Please note:** The Microsoft Windows operating system uses ``\`` instead of ``/`` to specify file paths on the command line. On other systems, adjust the file paths in the command line arguments accordingly.
 
@@ -245,19 +248,19 @@ Integrate the ZIP-file in your project's backup process.
 
 ## Summary
 
-You now have created the following resuls:
+You now have created the following results:
 
 - A **template for book projects** with the AsciiDoc language
-  - For other projects such als slides or theses you simply create subfolders in ``/src/`` and extend the build script
+  - For other projects such as as slide deck or a thesis, you can simply create subfolders in ``/src/`` and extend the build script.
 
 - An **automated publishing platform** for your AsciiDoc projects
-  - The platform is generic enough to be replicated on other operating systems
+  - This platform is generic enough to be replicated on other operating systems.
 
 - A **convenient AsciiDoc editor** 
-  - You can use the editor to generate output files manually, a great addition to the automated process you have set up!
-  - As a kind of customized tool, it is portable and you can put it in your backup
+  - You can use the editor to generate output files manually, a great addition to your automated build script!
+  - As a kind of customized tooling, it is portable and you can put it in your backup.
 
-If you do not need sophisticated layout options and support for STEM/mathematical expressions in your automated PDF generation, you are done here! Congrats!
+If you do not need sophisticated layout options and support for STEM and/or mathematical expressions in your automated PDF generation, you are done here! Congrats!
 
 ## Next Steps
 
@@ -342,8 +345,9 @@ asciidoc-book-template/
 |  ├─ ...
 ```
 
-Integrate the new document templates into your automated build process (e.g., in your ``build.bat``).
+Integrate your new document templates into your automated build process (e.g., in your ``build.bat``).
 
+Have fun!
 
 <!--
 
