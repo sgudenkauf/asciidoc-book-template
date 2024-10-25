@@ -1,6 +1,6 @@
 # asciidoc-book-template
 
-2924-10-25, Stefan Gudenkauf
+2024-10-25, Stefan Gudenkauf
 
 [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/) is a lightweight and semantic markup language primarily designed for writing technical documentation. The language can be used to produce a variety of presentation-rich output formats, all from content encoded in a concise, human-readable, plain text format.
 

@@ -3,4 +3,4 @@
 
 {author} is a  ...
 
-An example of a basic https://asciidoc.org[AsciiDoc] document prepared by {author}.
+A basic https://asciidoc.org[AsciiDoc] book template prepared by {author}.

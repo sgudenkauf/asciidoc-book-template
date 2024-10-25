@@ -2312,6 +2312,7 @@ span.footnote {
 <li class="toc-entry"><a href="#_chapter_2">Chapter 2</a></li>
 </ul></li>
 </li>
+<li class="toc-entry"><a href="#_second_section">Second Section</a></li>
 <li class="toc-entry"><a href="#_colophon">Colophon</a></li>
 <li class="toc-entry"><a href="#_bibliography">Bibliography</a></li>
 <li class="toc-entry"><a href="#_appendix">Appendix A: Appendix</a></li>
@@ -2328,6 +2329,7 @@ span.footnote {
 <li class="toc-entry"><a href="#_chapter_2">Chapter 2</a></li>
 </ul></li>
 </li>
+<li class="toc-entry"><a href="#_second_section">Second Section</a></li>
 <li class="toc-entry"><a href="#_colophon">Colophon</a></li>
 <li class="toc-entry"><a href="#_bibliography">Bibliography</a></li>
 <li class="toc-entry"><a href="#_appendix">Appendix A: Appendix</a></li>
@@ -2341,7 +2343,7 @@ span.footnote {
 <p>Stefan Gudenkauf is a  &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
-<p>An example of a basic <a href="https://asciidoc.org">AsciiDoc</a> document prepared by Stefan Gudenkauf.</p>
+<p>A basic <a href="https://asciidoc.org">AsciiDoc</a> book template prepared by Stefan Gudenkauf.</p>
 </div>
 </div>
 </div>
@@ -2423,13 +2425,7 @@ server.listen(8888);</code></pre>
 <div class="sect3">
 <h4 id="_subsection_title_2">Subsection Title</h4>
 <div class="paragraph">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2440,70 +2436,62 @@ mollit anim id est laborum.</p>
 <td class="content">
 <div class="title">Some note about what you are reading</div>
 <div class="paragraph">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 </div>
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_chapter_2">Chapter 2</h3>
 <div class="paragraph">
-<p>A paragraph followed by an unordered list<span id="_footnote_1" class="footnote">AsciiDoc supports unordered, ordered, and description lists.</span> with square bullets.<span id="_footnote_2" class="footnote">You may choose from square, disc, and circle for the bullet style.</span></p>
+<p>A paragraph followed by a list. It also has a footnote.<span id="_footnote_1" class="footnote">AsciiDoc supports unordered, ordered, and description lists.</span></p>
 </div>
-<div class="paragraph">
-<p><strong>Hallo Arne!</strong></p>
-</div>
-<div class="ulist square">
-<ul class="square">
+<div class="ulist">
+<ul>
 <li>
 <p>item 1</p>
 </li>
 <li>
 <p>item 2</p>
 </li>
-<li>
-<p>item 3</p>
-</li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Another paragraph with <strong>strong</strong> significance, an <em>emphasized</em> statement, a <strong><em>combination</em></strong> of both, and an inline <code>code</code> example.</p>
+</div>
+<div class="paragraph">
+<p><strong>See also:</strong> <a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-constrained">AsciiDoc Syntax Quick Reference</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_second_section">Second Section</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is an example for source code blocks with a caption:</p>
+</div>
+<div class="listingblock">
+<div class="title">Listing 1. A most basic Ruby program.</div>
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">puts 'Hello, World!' <i class="conum" data-value="1"></i></code></pre>
+</div>
+</div>
+<div class="colist arabic ">
+<ol>
+<li>
+<p>A callout for a line of code.</p>
+</ol>
+</div>
+<div class="paragraph">
+<p>And here is a STEM expression:</p>
 </div>
 <div class="stemblock">
 <div class="content">
 \[\lim_{n \to \infty}\frac{n}{\sqrt[n]{n!}} = {\large e}\]
-</div>
-</div>
-<div class="paragraph">
-<p>Here&#8217;s how you say &#8220;Hello, World!&#8221; in Prawn:</p>
-</div>
-<div class="listingblock">
-<div class="title">Listing 1. Create a basic PDF document using Prawn</div>
-<div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">require 'prawn'
-
-Prawn::Document.generate 'example.pdf' do
-  text 'Hello, World!'
-end</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>That&#8217;s all, folks!</p>
 </div>
 </div>
 </div>
@@ -2524,33 +2512,21 @@ Wolpertingers.</p>
 <div class="sect1">
 <h2 id="_bibliography">Bibliography</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This template uses the book bibliography examples from the AsciiDoc website <a href="#asciidoc2024b">[asciidoc2024b]</a>.</p>
+</div>
+<div class="paragraph">
+<p><em>The Pragmatic Programmer</em> <a href="#HuntThomas1999">[HuntThomas1999]</a> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the &#8220;Gang of Four&#8221; <a href="#Gamma1994">[Gamma1994]</a>.</p>
+</div>
 <div class="ulist bibliography">
 <div class="title">Books</div>
 <ul class="bibliography">
 <li>
-<p><a id="flanagan"></a>[flanagan] David Flanagan.
-'<a href="http://oreilly.com/catalog/9780596805531">JavaScript: The Definitive Guide,
-Sixth Edition</a>'. O&#8217;Reilly. 2011. ISBN 0-596-80552-7</p>
+<p><a id="HuntThomas1999"></a>[HuntThomas1999] Andy Hunt &amp; Dave Thomas. The Pragmatic Programmer: From Journeyman to Master. Addison-Wesley. 1999.</p>
 </li>
 <li>
-<p><a id="crockford"></a>[crockford] Douglas Crockford.
-'<a href="http://oreilly.com/catalog/9780596517748">JavaScript: The Good Parts</a>'.
-O&#8217;Reilly. 2008. ISBN 0-596-51774-2.</p>
-</li>
-<li>
-<p><a id="stefanov"></a>[stefanov] Stoyan Stefanov.
-'<a href="http://shop.oreilly.com/product/9780596806767.do">JavaScript Patterns</a>'.
-O&#8217;Reilly. 2010. ISBN 0-596-80675-2.</p>
-</li>
-<li>
-<p><a id="keith"></a>[keith] Jeremy Keith.
-'<a href="http://www.abookapart.com/products/html5-for-web-designers">HTML5 for Web
-Designers</a>'. A Book Apart. 2010. ISBN 978-0-9844425-0-8.</p>
-</li>
-<li>
-<p><a id="cederholm"></a>[cederholm] Dan Cederholm
-'<a href="http://www.abookapart.com/products/css3-for-web-designers">CSS3 for Web
-Designers</a>'. A Book Apart. 2011. ISBN 978-0-9844425-2-2.</p>
+<p><a id="Gamma1994"></a>[Gamma1994] Erich Gamma, Richard Helm, Ralph Johnson &amp; John Vlissides. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley. 1994.</p>
 </li>
 </ul>
 </div>
@@ -2558,16 +2534,10 @@ Designers</a>'. A Book Apart. 2011. ISBN 978-0-9844425-2-2.</p>
 <div class="title">Websites</div>
 <ul class="bibliography">
 <li>
-<p><a href="http://nodejs.org/">Official Node.js Website</a></p>
+<p><a id="asciidoc2024a"></a>[asciidoc2024a] <a href="https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/">AsciiDoc Syntax Quick Reference</a>. Last visited: 2024-10-25.</p>
 </li>
 <li>
-<p><a href="http://nodejs.org/docs/latest/api/index.html">Latest Node.js documentation</a></p>
-</li>
-<li>
-<p><a href="http://nodeguide.com/style.html">Node.js Style Guide</a></p>
-</li>
-<li>
-<p><a href="http://www.nodebeginner.org/">Node.js Tutorial</a></p>
+<p><a id="asciidoc2024b"></a>[asciidoc2024b] <a href="https://docs.asciidoctor.org/asciidoc/latest/sections/bibliography/#bibliography-entries-syntax">Bibliography entries syntax</a>. Last visited: 2024-10-25.</p>
 </li>
 </ul>
 </div>

@@ -1,29 +1,19 @@
 
 == Bibliography
 
+This template uses the book bibliography examples from the AsciiDoc website <<asciidoc2024b>>.
+
+_The Pragmatic Programmer_ <<HuntThomas1999>> should be required reading for all developers.
+To learn all about design patterns, refer to the book by the "`Gang of Four`" <<Gamma1994>>.
+
 .Books
 
 [bibliography]
-- [[[flanagan]]] David Flanagan.
-  'http://oreilly.com/catalog/9780596805531[JavaScript: The Definitive Guide,
-  Sixth Edition]'. O'Reilly. 2011. ISBN 0-596-80552-7
-- [[[crockford]]] Douglas Crockford.
-  'http://oreilly.com/catalog/9780596517748[JavaScript: The Good Parts]'.
-  O'Reilly. 2008. ISBN 0-596-51774-2.
-- [[[stefanov]]] Stoyan Stefanov.
-  'http://shop.oreilly.com/product/9780596806767.do[JavaScript Patterns]'.
-  O'Reilly. 2010. ISBN 0-596-80675-2.
-- [[[keith]]] Jeremy Keith.
-  'http://www.abookapart.com/products/html5-for-web-designers[HTML5 for Web
-  Designers]'. A Book Apart. 2010. ISBN 978-0-9844425-0-8.
-- [[[cederholm]]] Dan Cederholm
-  'http://www.abookapart.com/products/css3-for-web-designers[CSS3 for Web
-  Designers]'. A Book Apart. 2011. ISBN 978-0-9844425-2-2.
+* [[[HuntThomas1999]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer: From Journeyman to Master. Addison-Wesley. 1999.
+* [[[Gamma1994]]] Erich Gamma, Richard Helm, Ralph Johnson & John Vlissides. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley. 1994.
 
 .Websites
 
 [bibliography]
-- http://nodejs.org/[Official Node.js Website]
-- http://nodejs.org/docs/latest/api/index.html[Latest Node.js documentation]
-- http://nodeguide.com/style.html[Node.js Style Guide]
-- http://www.nodebeginner.org/[Node.js Tutorial]
+- [[[asciidoc2024a]]] https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoc Syntax Quick Reference]. Last visited: 2024-10-25.
+- [[[asciidoc2024b]]] https://docs.asciidoctor.org/asciidoc/latest/sections/bibliography/#bibliography-entries-syntax[Bibliography entries syntax]. Last visited: 2024-10-25.

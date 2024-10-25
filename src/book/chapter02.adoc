@@ -1,31 +1,29 @@
 
 === Chapter 2
 
-A paragraph followed by an unordered list{empty}footnote:[AsciiDoc supports unordered, ordered, and description lists.] with square bullets.footnote:[You may choose from square, disc, and circle for the bullet style.]
+A paragraph followed by a list. It also has a footnote.footnote:[AsciiDoc supports unordered, ordered, and description lists.] 
 
-*Hallo Arne!*
-
-[square]
 * item 1
 * item 2
-* item 3
+
+Another paragraph with *strong* significance, an _emphasized_ statement, a *_combination_* of both, and an inline `code` example. 
+
+*See also:* https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-constrained[AsciiDoc Syntax Quick Reference]
+
+== Second Section
+
+Here is an example for source code blocks with a caption:
+
+.A most basic Ruby program.
+[source,ruby]
+----
+puts 'Hello, World!' # <1>
+----
+<1> A callout for a line of code.
+
+And here is a STEM expression:
 
 [stem]
 ++++
 \lim_{n \to \infty}\frac{n}{\sqrt[n]{n!}} = {\large e}
 ++++
-
-Here's how you say "`Hello, World!`" in Prawn:
-
-.Create a basic PDF document using Prawn
-[source,ruby]
-----
-require 'prawn'
-
-Prawn::Document.generate 'example.pdf' do
-  text 'Hello, World!'
-end
-----
-
-That's all, folks!
-
