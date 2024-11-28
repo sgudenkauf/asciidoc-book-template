@@ -2,6 +2,7 @@
 /.asciidocfx/
 /.asciidoctor-vscode/
 /.asciidoctor-web-pdf/
+/.asciidoctor-reveal-js/
 
 # Ignore standard files and folders
 *.gem
