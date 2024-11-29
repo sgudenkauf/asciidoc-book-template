@@ -1,0 +1,46 @@
+= Title Slide
+:revealjs_theme: sky
+:source-highlighter: highlight.js
+:icons: font
+
+== Slide One
+
+* Foo
+* Bar
+* World
+
+== Slide Two
+
+A Great Story
+
+[.notes]
+--
+* tell anecdote
+* make a point
+--
+
+
+[.columns]
+== Slide Three
+
+[.column]
+--
+* **Edgar Allen Poe**
+* Sheri S. Tepper
+* Bill Bryson
+--
+
+[.column]
+--
+Edgar Allan Poe (/poʊ/; born Edgar Poe; January 19, 1809 – October 7, 1849) was an American writer, editor, and literary critic.
+--
+
+== Slide Four
+
+WARNING: This presentation is dangerous!
+
+[source, python]
+----
+print "Hello World"
+----
+
